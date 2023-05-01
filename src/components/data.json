@@ -1,0 +1,143 @@
+[
+      {
+        "name": "Farhana Rahman",
+        "id": 1,
+        "Chef_Picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvmmCVa9sqisIR3V_2hIQ8r7nvf2nWUBz6sTVxb4E7YkZQ1-Y81sg37yB_9QkaJmV9_NY&usqp=CAU",
+        "rating": 4.5,
+        "years_of_experience": 10,
+        "cooking_method": "Clean and marinate the fish. Heat oil in a pan and fry the fish. In the same oil, fry the onions and tomatoes. Add the spices and cook until the oil separates. Add water and let it boil. Add the fried fish and cook for a few more minutes. Serve hot with rice.",
+
+        "recipes": [
+          "Bengali Fish Curry",
+          "Chingri Malai Curry",
+          "Bhuna Khichuri"
+        ],
+
+        "ingredients": [
+            "1 cup rice",
+            "1 cup yellow lentils",
+            "2 onions, sliced",
+            "2 green chillies, chopped",
+            "1 tsp cumin seeds"
+          ]
+      },
+     
+     
+     
+      {
+        "name": "Nadia Ahmed",
+        "id": 2,
+        "Chef_Picture": "https://tajdining.com/uploads/chefs/small/53_small_2022_07_26_03_37_47.jpg",
+        "rating": 4.00,
+        "years_of_experience": 8,
+        "cooking_method": "Clean and cut the chicken into pieces. Heat oil in a pan and fry the chicken. In the same oil, fry the onions, ginger, and garlic. Add the spices and cook until the oil separates. Add water and let it boil. Cover and simmer until the chicken is cooked. Serve hot with rice.",
+
+        "recipes": [
+          "Chicken Roast",
+          "Beef Bhuna",
+          "Shahi Tukra"
+        ],
+        
+       
+        "ingredients": [
+                "500g prawns",
+                "1 onion, chopped",
+                "1 tbsp ginger paste",
+                "1 tbsp garlic paste",
+                "1 cup coconut milk"
+        ]
+        
+      },
+     
+     
+      {
+        "name": "Abdul Khan",
+        "id": 3,
+        "Chef_Picture": "https://media.istockphoto.com/id/465400717/photo/professional-chef.jpg?s=170667a&w=0&k=20&c=9zkZ6uh4NplD7KygJJI4GjFzbUllbZLQS3rZWQY21vE=",
+        "rating": 4.2,
+        "years_of_experience": 12,
+        "cooking_method": "Clean and marinate the mutton. Heat oil in a pan and fry the mutton. In the same oil, fry the onions, ginger, and garlic. Add yogurt and cook until the oil separates. Add water and let it boil. Cover and simmer until the mutton is cooked. Add kewra water and saffron. Serve hot with rice.",
+
+        "recipes": [
+          "Biryani",
+          "Korma",
+          "Keema Naan"
+        ],
+
+        "ingredients": [
+            "500g prawns",
+            "1 onion, chopped",
+            "1 tbsp ginger paste",
+            "1 tbsp garlic paste",
+            "1 cup coconut milk"
+          ]
+      
+    },
+     
+     
+      {
+        "name": "Rima Chowdhury",
+        "id": 4,
+        "Chef_Picture": "https://lastheplace.com/images/article-images/2021/05/chef-life-1024x683.jpg",
+        "rating": 4.3,
+        "years_of_experience": 15,
+        "cooking_method": "Clean and devein the shrimp. Heat oil in a pan and fry the shrimp. In the same oil, fry the onions, ginger, and garlic. Add coconut milk and cook until the oil separates. Add water and let it boil. Add the fried shrimp and cook for a few more minutes. Serve hot with rice.",
+
+        "recipes": [
+          "Shrimp Curry",
+          "Daal Mash",
+          "Lemon Chicken"
+        ]
+      },
+     
+      {
+        "name": "Karim Uddin",
+        "id": 5,
+        "Chef_Picture": "https://advice.hosco.com/wp-content/uploads/2021/10/Untitled-design-29.png",
+        "rating": 4.1,
+        "years_of_experience": 6,
+        "cooking_method": "Clean and marinate the fish. Heat oil in a pan and fry the fish. In the same oil, fry the onions and tomatoes. Add the spices and cook until the oil separates. Add water and let it boil. Add the fried fish and cook for a few more minutes. Serve hot with rice.",
+
+        "recipes": [
+          "Kofta Curry",
+          "Vegetable Biryani",
+          "Chicken Karahi"
+        ],
+
+        "ingredients": [
+            "500g hilsa fish",
+            "2 tbsp mustard paste",
+            "2 green chillies, chopped",
+            "1 tsp turmeric powder",
+            "1 tbsp mustard oil"
+          ]
+      
+    },
+      
+      
+      {
+        "name": "Rahim Ahmed",
+        "id": 6,
+        "Chef_Picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT95u1vIi0Wbd59TUAJqgJiVN-GYL0rnMWOHAZvbUaSkdb7ic-tdarKtQSa1AOAigzZ5mc&usqp=CAU",
+        "rating": 4.7,
+        "years_of_experience": 20,
+        "cooking_method": "Clean and marinate the mutton. Heat oil in a pan and fry the mutton. In the same oil, fry the onions, ginger, and garlic. Add yogurt and cook until the oil separates. Add water and let it boil. Cover and simmer until the mutton is cooked. Add kewra water and saffron. Serve hot with rice.",
+
+        "recipes": [
+          "Chapli Kebab",
+          "Lamb Biryani",
+          "Mango Lassi"
+        ],
+
+        "ingredients": [
+            "500g chicken",
+            "2 onions, sliced",
+            "1 tbsp ginger paste",
+            "1 tbsp garlic paste",
+            "1 tsp cumin powder"
+          ]
+
+      }
+    ]
+  
+  

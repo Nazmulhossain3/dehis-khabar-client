@@ -10,6 +10,10 @@ import {
 import "./index.css";
 import Home from './components/Home.jsx';
 import Banner from './components/Banner.jsx';
+import Login from './components/Login.jsx';
+import Register from './components/Register.jsx';
+import Blog from './components/Blog.jsx';
+import ChefData from './components/ChefData.jsx';
 
 const router = createBrowserRouter([
   {
@@ -19,6 +23,23 @@ const router = createBrowserRouter([
       {
         path : '/',
         element : <Banner></Banner>
+      },
+      {
+        path : '/login',
+        element : <Login></Login>
+      },
+      {
+        path : '/register',
+        element : <Register></Register>
+      },
+      {
+        path : '/blog',
+        element : <Blog></Blog>
+      },
+      {
+        path : '/chefData',
+        element : <ChefData></ChefData>,
+        
       }
     ]
   },

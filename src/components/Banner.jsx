@@ -1,8 +1,10 @@
 import React from "react";
+import ChefData from "./ChefData";
 
 const Banner = () => {
   return (
-    <div className="hero p-6 bg-base-200">
+   <div>
+     <div className="hero p-6 bg-base-200">
       <div className="hero-content flex-col lg:flex-row-reverse">
         <img
           src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7pKvGpUdV3PcNH2CvMvzjWoKEgX67KLMR7g&usqp=CAU'
@@ -16,7 +18,12 @@ const Banner = () => {
           <button className="btn btn-primary">Get Started</button>
         </div>
       </div>
+
+    
     </div>
+
+    <ChefData></ChefData>
+   </div>
   );
 };
 
