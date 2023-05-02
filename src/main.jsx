@@ -14,6 +14,7 @@ import Login from './components/Login.jsx';
 import Register from './components/Register.jsx';
 import Blog from './components/Blog.jsx';
 import ChefData from './components/ChefData.jsx';
+import ChefPages from './components/ChefPages.jsx';
 
 const router = createBrowserRouter([
   {
@@ -40,6 +41,10 @@ const router = createBrowserRouter([
         path : '/chefData',
         element : <ChefData></ChefData>,
         
+      },
+      {
+        path : '/chefData/:id',
+        element : <ChefPages></ChefPages>
       }
     ]
   },
