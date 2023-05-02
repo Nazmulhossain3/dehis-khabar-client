@@ -54,7 +54,16 @@ const ChefPages = () => {
     </div>
   
     <p className=''>Cooking Method : {cooking_method}</p>
-    <p>Rating : {rating}</p>
+    <p>Rating : {rating}
+    <div className="rating rating-sm">
+  <input type="radio" name="rating-6" className="mask mask-star-2 bg-orange-400" />
+  <input type="radio" name="rating-6" className="mask mask-star-2 bg-orange-400" checked />
+  <input type="radio" name="rating-6" className="mask mask-star-2 bg-orange-400" />
+  <input type="radio" name="rating-6" className="mask mask-star-2 bg-orange-400" />
+  <input type="radio" name="rating-6" className="mask mask-star-2 bg-orange-400" />
+</div>
+    
+    </p>
     <div className="card-actions justify-end">
       <button className='border-2 p-2 w-full btn-outline rounded-2xl bg-teal-600 text-white'>Add to Favorite</button>
     </div>
@@ -84,7 +93,18 @@ const ChefPages = () => {
     </div>
   
     <p className=''>Cooking Method : {cooking_method}</p>
-    <p>Rating : {rating}</p>
+    <p>
+      Rating : {rating}
+      <div className="rating rating-sm">
+  <input type="radio" name="rating-6" className="mask mask-star-2 bg-orange-400" />
+  <input type="radio" name="rating-6" className="mask mask-star-2 bg-orange-400" checked />
+  <input type="radio" name="rating-6" className="mask mask-star-2 bg-orange-400" />
+  <input type="radio" name="rating-6" className="mask mask-star-2 bg-orange-400" />
+  <input type="radio" name="rating-6" className="mask mask-star-2 bg-orange-400" />
+</div>
+    
+    
+    </p>
     <div className="card-actions justify-end">
       <button className='border-2 p-2 w-full btn-outline rounded-2xl bg-teal-600 text-white'>Add to Favorite</button>
     </div>
@@ -105,7 +125,16 @@ const ChefPages = () => {
     </div>
   
     <p className=''>Cooking Method : {cooking_method}</p>
-    <p>Rating : {rating}</p>
+    <p>Rating : {rating}
+    <div className="rating rating-sm">
+  <input type="radio" name="rating-6" className="mask mask-star-2 bg-orange-400" />
+  <input type="radio" name="rating-6" className="mask mask-star-2 bg-orange-400" checked />
+  <input type="radio" name="rating-6" className="mask mask-star-2 bg-orange-400" />
+  <input type="radio" name="rating-6" className="mask mask-star-2 bg-orange-400" />
+  <input type="radio" name="rating-6" className="mask mask-star-2 bg-orange-400" />
+</div>
+    
+    </p>
     <div className="card-actions justify-end">
       <button className='border-2 p-2 w-full btn-outline rounded-2xl bg-teal-600 text-white'>Add to Favorite</button>
     </div>
