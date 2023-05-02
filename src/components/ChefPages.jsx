@@ -1,12 +1,17 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import like from '../assets/like.png'
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 
 const ChefPages = () => {
     const [chefPages, setChefPages] = useState({})
+    const [disabled, setDisabled] = useState(false);
     const {id} = useParams()
 
     useEffect(()=>{
+    
         fetch(`http://localhost:5000/chefData/${id}`)
         .then(res => res.json())
         .then(data => setChefPages(data))
@@ -19,6 +24,24 @@ const ChefPages = () => {
     } = chefPages
     console.log(chefPages)
 
+    
+    const handleClick = () =>{
+     toast('the recipe is your favorite')
+     setDisabled(true)
+
+   }
+
+   const handleFavorite = ()=> {
+    toast('the recipe is your favorite')
+    setDisabled(true)
+   }
+    
+
+   const handleAddFavourite = () => {
+    toast('the recipe is your favorite')
+    setDisabled(true)
+
+   }
     return (
  <div>
 
@@ -65,7 +88,7 @@ const ChefPages = () => {
     
     </p>
     <div className="card-actions justify-end">
-      <button className='border-2 p-2 w-full btn-outline rounded-2xl bg-teal-600 text-white'>Add to Favorite</button>
+      <button onClick={handleClick} disabled={disabled} className='border-2 p-2 w-full  rounded-2xl bg-teal-600 text-white'>Add to Favorite</button>
     </div>
   </div>
    
@@ -106,7 +129,7 @@ const ChefPages = () => {
     
     </p>
     <div className="card-actions justify-end">
-      <button className='border-2 p-2 w-full btn-outline rounded-2xl bg-teal-600 text-white'>Add to Favorite</button>
+      <button disabled={disabled} onClick={handleFavorite} className='border-2 p-2 w-full btn-outline rounded-2xl bg-teal-600 text-white'>Add to Favorite</button>
     </div>
   </div>
     </div>
@@ -136,7 +159,7 @@ const ChefPages = () => {
     
     </p>
     <div className="card-actions justify-end">
-      <button className='border-2 p-2 w-full btn-outline rounded-2xl bg-teal-600 text-white'>Add to Favorite</button>
+      <button disabled={disabled} onClick={handleAddFavourite} className='border-2 p-2 w-full btn-outline rounded-2xl bg-teal-600 text-white'>Add to Favorite</button>
     </div>
   </div>
     </div>
@@ -147,7 +170,7 @@ const ChefPages = () => {
    </div>
 
 
-
+<ToastContainer></ToastContainer>
 </div>
 
 

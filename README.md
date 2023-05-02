@@ -3,7 +3,7 @@
 
 # Chef Details
 
-➡ You can see chef details also the home page. There write about chefs. If you click the view recipes button then will see details about chefs(you must have sign in).
+➡ You can see chef details also the home page. There write about chefs. If you click the view recipes button then will see details about chefs(you must have signed in).
 
 # Register Page
 
@@ -15,4 +15,8 @@
 
 # Privet Route
 
-➡ You must have to sign for seeing chef details. If you click the chef page then auto redirect with login page. Please login carefully.
+➡ You must have to sign for seeing chefs' details. If you click the chef page then auto redirect with the login page. Please login carefully.
+
+# Disabled Button / Add To Favorite
+
+➡ If you click Add to Favorite Button, then it will show a toast with some text. You can not make it twice because the button will be disabled after clicking once. somehow you can not notice the button as blurred do not be confused it is caused by the button's background color.
