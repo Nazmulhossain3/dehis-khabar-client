@@ -1,6 +1,7 @@
 import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import { AuthContext } from './Provider/AuthProvider';
+import { NavLink } from 'react-router-dom';
 
 const Header = () => {
   const {user} = useContext(AuthContext)
@@ -11,10 +12,10 @@ const Header = () => {
         </div>
         <div className="flex-none gap-2 text-xl">
           <div className='mr-80 flex md:flex-row flex-col gap-8'>
-            <Link to='/'>Home</Link>
-            <Link to='/login'>Login</Link>
-            <Link to='blog'>Blog</Link>
-            <Link to='/register'> Register</Link>
+            <NavLink className={({ isActive}) =>isActive ? "text-green-500" : ""}  to='/'>Home</NavLink>
+            <NavLink className={({ isActive}) =>isActive ? "text-green-500" : ""} to='/login'>Login</NavLink>
+            <NavLink className={({ isActive}) =>isActive ? "text-green-500" : ""} to='blog'>Blog</NavLink>
+            <NavLink className={({ isActive}) =>isActive ? "text-green-500" : ""} to='/register'> Register</NavLink>
 
           </div>
         
