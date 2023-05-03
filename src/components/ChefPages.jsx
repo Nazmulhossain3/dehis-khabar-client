@@ -8,6 +8,8 @@ import 'react-toastify/dist/ReactToastify.css';
 const ChefPages = () => {
     const [chefPages, setChefPages] = useState({})
     const [disabled, setDisabled] = useState(false);
+   
+  
     const {id} = useParams()
 
     useEffect(()=>{
@@ -27,19 +29,20 @@ const ChefPages = () => {
     
     const handleClick = () =>{
      toast('the recipe is your favorite')
-     setDisabled(true)
+    setDisabled(true)
 
    }
 
    const handleFavorite = ()=> {
     toast('the recipe is your favorite')
     setDisabled(true)
+
    }
     
 
    const handleAddFavourite = () => {
     toast('the recipe is your favorite')
-    setDisabled(true)
+  //  return setDisabled(true)
 
    }
     return (
@@ -88,7 +91,7 @@ const ChefPages = () => {
     
     </p>
     <div className="card-actions justify-end">
-      <button onClick={handleClick} disabled={disabled} className='border-2 p-2 w-full  rounded-2xl bg-teal-600 text-white'>Add to Favorite</button>
+      <button onClick={handleClick} disabled={disabled} className='border-2 p-2 w-full btn-outline  rounded-2xl bg-teal-600 text-white'>Add to Favorite</button>
     </div>
   </div>
    

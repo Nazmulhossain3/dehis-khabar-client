@@ -17,6 +17,7 @@ import ChefData from './components/ChefData.jsx';
 import ChefPages from './components/ChefPages.jsx';
 import ErrorPage from '../../milestone--9-react-router/heroGadget-complete/src/components/ErrorPage.jsx';
 import AuthProvider from './components/Provider/AuthProvider.jsx';
+import PrivateRoute from './components/Route/PrivateRoute.jsx';
 
 const router = createBrowserRouter([
   {
@@ -47,7 +48,7 @@ const router = createBrowserRouter([
       },
       {
         path : '/chefData/:id',
-        element : <ChefPages></ChefPages>
+        element :<PrivateRoute><ChefPages></ChefPages></PrivateRoute>
       }
     ]
   },
