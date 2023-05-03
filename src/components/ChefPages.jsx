@@ -91,7 +91,13 @@ const ChefPages = () => {
     
     </p>
     <div className="card-actions justify-end">
-      <button onClick={handleClick} disabled={disabled} className='border-2 p-2 w-full btn-outline  rounded-2xl bg-teal-600 text-white'>Add to Favorite</button>
+
+  <button className="btn gap-2 w-full ">
+  <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" /></svg>
+  Button
+</button>
+
+
     </div>
   </div>
    
@@ -132,8 +138,14 @@ const ChefPages = () => {
     
     </p>
     <div className="card-actions justify-end">
-      <button disabled={disabled} onClick={handleFavorite} className='border-2 p-2 w-full btn-outline rounded-2xl bg-teal-600 text-white'>Add to Favorite</button>
-    </div>
+
+<button className="btn gap-2 w-full ">
+  <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" /></svg>
+  Button
+</button>
+
+
+ </div>
   </div>
     </div>
     <div className="card hover:bg-gray-100  bg-teal-100 shadow-xl mt-6">
@@ -162,7 +174,11 @@ const ChefPages = () => {
     
     </p>
     <div className="card-actions justify-end">
-      <button disabled={disabled} onClick={handleAddFavourite} className='border-2 p-2 w-full btn-outline rounded-2xl bg-teal-600 text-white'>Add to Favorite</button>
+
+    <button className="btn gap-2 w-full ">
+  <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" /></svg>
+  Button
+</button>
     </div>
   </div>
     </div>

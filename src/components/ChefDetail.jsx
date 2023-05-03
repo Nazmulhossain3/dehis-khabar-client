@@ -1,8 +1,21 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import like from '../assets/like.png'
 import { Link } from 'react-router-dom';
+import { AuthContext } from './Provider/AuthProvider';
+import LazyLoad from 'react-lazy-load';
 
 const ChefDetail = ({data}) => {
+
+  const {loading} = useContext(AuthContext)
+  if(loading){
+    return   <div>
+    <LazyLoad height={762}>
+      <img src='http://apod.nasa.gov/apod/image/1502/HDR_MVMQ20Feb2015ouellet1024.jpg' />
+    </LazyLoad>
+  </div>
+  }
+
+
     const {id,name,Chef_Picture,years_of_experience,num_of_recipes} = data
     return ( 
         
