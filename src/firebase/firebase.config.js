@@ -5,12 +5,12 @@ import { initializeApp } from "firebase/app";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyDdMUC5-x6o2N4LUWqIUlwDXGsNNfoGEqQ",
-  authDomain: "dehsi-khabar-auth.firebaseapp.com",
-  projectId: "dehsi-khabar-auth",
-  storageBucket: "dehsi-khabar-auth.appspot.com",
-  messagingSenderId: "1050466626237",
-  appId: "1:1050466626237:web:50cb419ac6be0de312a5d4"
+  apiKey: import.meta.env.VITE_APIKEY,
+  authDomain: import.meta.env.VITE_AUTHDOMAIN,
+  projectId: import.meta.env.VITE_PROJETID,
+  storageBucket:import.meta.env.VITE_STORAGEBUCKET,
+  messagingSenderId: import.meta.env.VITE_MESSAGINGSENDERID,
+  appId: import.meta.env.VITE_APPID
 };
 
 // Initialize Firebase

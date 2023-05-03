@@ -29,7 +29,7 @@ const Header = () => {
             <label tabIndex={0} className="">
              {
               user ? <div className="w-10 rounded-full">
-              <img className='rounded-full' src={user?.photoURL} />
+              <img title={user.displayName} className='rounded-full' src={user?.photoURL} />
            
              
             </div> : <Link to='/login'><button className="btn btn-sm">Login</button></Link>
