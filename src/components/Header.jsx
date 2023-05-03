@@ -4,7 +4,12 @@ import { AuthContext } from './Provider/AuthProvider';
 import { NavLink } from 'react-router-dom';
 
 const Header = () => {
-  const {user} = useContext(AuthContext)
+  const {user,logOut} = useContext(AuthContext)
+
+  const handleLogout =() => {
+    logOut()
+  }
+  
     return (
         <div className="navbar bg-gray-400 bg-opacity-5 ">
         <div className="flex-1">
@@ -16,7 +21,7 @@ const Header = () => {
             <NavLink className={({ isActive}) =>isActive ? "text-green-500" : ""} to='/login'>Login</NavLink>
             <NavLink className={({ isActive}) =>isActive ? "text-green-500" : ""} to='blog'>Blog</NavLink>
             <NavLink className={({ isActive}) =>isActive ? "text-green-500" : ""} to='/register'> Register</NavLink>
-
+           
           </div>
         
         
@@ -34,14 +39,18 @@ const Header = () => {
               <li>
                 <a className="justify-between">
                   Profile
-                  <span className="badge">New</span>
                 </a>
 
             
 
               </li>
               <li><a>Settings</a></li>
-              <li><a>Logout</a></li>
+              <li><a>
+              {
+              logOut ? <span><button onClick={handleLogout}>Logout</button></span> : ''
+            }
+                
+                </a></li>
             </ul>
           </div>
         </div>

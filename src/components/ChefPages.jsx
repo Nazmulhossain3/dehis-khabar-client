@@ -8,6 +8,8 @@ import 'react-toastify/dist/ReactToastify.css';
 const ChefPages = () => {
     const [chefPages, setChefPages] = useState({})
     const [disabled, setDisabled] = useState(false);
+    const [disabled1, setDisabled1] = useState(false);
+    const [disabled2, setDisabled2] = useState(false);
    
   
     const {id} = useParams()
@@ -22,27 +24,30 @@ const ChefPages = () => {
     },[])
 
     const {name,Chef_Picture,years_of_experience,num_of_recipes,bio,
-     cooking_method,ingredients,rating,recipes
+     cooking_method,ingredients,rating,recipes,
     } = chefPages
     console.log(chefPages)
 
     
     const handleClick = () =>{
-     toast('the recipe is your favorite')
+    
+      
+      
+    toast.success('the recipe is your favorite')
     setDisabled(true)
 
    }
 
    const handleFavorite = ()=> {
-    toast('the recipe is your favorite')
-    setDisabled(true)
+    toast.success('the recipe is your favorite')
+    setDisabled1(true)
 
    }
     
 
    const handleAddFavourite = () => {
-    toast('the recipe is your favorite')
-  //  return setDisabled(true)
+    toast.success('the recipe is your favorite')
+   return setDisabled2(true)
 
    }
     return (
@@ -92,7 +97,7 @@ const ChefPages = () => {
     </p>
     <div className="card-actions justify-end">
 
-  <button className="btn gap-2 w-full ">
+  <button disabled={disabled} onClick={handleClick} className="btn gap-2 w-full ">
   <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" /></svg>
   Button
 </button>
@@ -139,7 +144,7 @@ const ChefPages = () => {
     </p>
     <div className="card-actions justify-end">
 
-<button className="btn gap-2 w-full ">
+<button disabled={disabled1} onClick={handleFavorite} className="btn gap-2 w-full ">
   <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" /></svg>
   Button
 </button>
@@ -148,6 +153,9 @@ const ChefPages = () => {
  </div>
   </div>
     </div>
+   
+   
+   
     <div className="card hover:bg-gray-100  bg-teal-100 shadow-xl mt-6">
     <div className="card-body">
     <h2 className="card-title">Name :{recipes?.[2]}</h2>
@@ -175,7 +183,7 @@ const ChefPages = () => {
     </p>
     <div className="card-actions justify-end">
 
-    <button className="btn gap-2 w-full ">
+    <button disabled={disabled2} onClick={handleAddFavourite}  className="btn gap-2 w-full ">
   <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" /></svg>
   Button
 </button>
