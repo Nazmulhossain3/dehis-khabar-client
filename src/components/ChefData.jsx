@@ -6,7 +6,7 @@ import ChefDetail from './ChefDetail';
 const ChefData = () => {
    const [chefData, setChefData] = useState([])
    useEffect(()=>{
-    fetch('http://localhost:5000/chefData')
+    fetch('https://deshi-client-server.vercel.app/chefData')
     .then(res => res.json())
     .then(data => setChefData(data))
 

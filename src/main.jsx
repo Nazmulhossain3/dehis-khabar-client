@@ -15,9 +15,10 @@ import Register from './components/Register.jsx';
 import Blog from './components/Blog.jsx';
 import ChefData from './components/ChefData.jsx';
 import ChefPages from './components/ChefPages.jsx';
-import ErrorPage from '../../milestone--9-react-router/heroGadget-complete/src/components/ErrorPage.jsx';
+
 import AuthProvider from './components/Provider/AuthProvider.jsx';
 import PrivateRoute from './components/Route/PrivateRoute.jsx';
+import ErrorPage from './components/ErrorPage.jsx';
 
 const router = createBrowserRouter([
   {
