@@ -3,7 +3,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import { AuthContext } from './Provider/AuthProvider';
 
 const Register = () => {
-    // const navigate = useNavigate()
+    const navigate = useNavigate()
     const {user,createUser,userUpdate} = useContext(AuthContext)
     const [error,setError] = useState('')
     
@@ -32,7 +32,7 @@ const Register = () => {
 
         console.log(loggedUser)
         
-        // navigate('/login')
+        navigate('/login')
         })
         .catch(error => {
             console.log(error)
