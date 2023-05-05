@@ -20,6 +20,8 @@ const ChefDetail = ({data}) => {
     return ( 
         
     <div className=" card  h-96 glass shadow-md">
+      
+  
   <figure><img className='' src={Chef_Picture} alt="car!"/></figure>
   <div className="card-body rounded-xl">
     <h2 className="card-title">{name}</h2>

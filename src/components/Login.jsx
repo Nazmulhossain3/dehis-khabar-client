@@ -11,6 +11,8 @@ const gitHubProvider = new GithubAuthProvider()
 
 const Login = () => {
   const [error, setError] = useState("");
+  const [emailError,setEmailError] = useState("")
+  console.log(error)
   const { signIn, user } = useContext(AuthContext);
   
   const navigate = useNavigate()
@@ -24,10 +26,9 @@ const Login = () => {
     const password = form.password.value;
     console.log(email, password);
 
-    if (password.length > 6) {
-      return setError("password must be 6 character");
-    } 
-    
+    if (password.length < 6) {
+      return setError("Password does not match!");
+    }
     else {
       setError("");
     }
@@ -40,7 +41,7 @@ const Login = () => {
        
       })
       .catch((error) => {
-        console.log(error);
+        setEmailError(error.message)
       });
   };
 
@@ -53,7 +54,7 @@ const Login = () => {
       console.log(user)
   })
   .catch(error=> {
-      console.log('error', error.message)
+      setEmailError(error.message)
   })
   }
 
@@ -91,6 +92,11 @@ const Login = () => {
                 required
               />
             </div>
+           
+            <p className="text-red-500">{emailError}</p>
+            <p className="text-red-500">{error}</p>
+
+          
             <div className="form-control">
               <label className="label">
                 <span className="label-text">Password</span>

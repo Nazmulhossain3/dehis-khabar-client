@@ -14,6 +14,8 @@ const ChefData = () => {
  
    return (
    <div>
+    <h2 className='bg-gray-100 text-3xl text-center text-teal-600 font-bold'>Our Best Chef here!</h2>
+
     <div className='bg-gray-100  grid md:grid-cols-3 grid-cols-1 gap-5 p-12'>
             {
                 chefData.map(data => <ChefDetail 

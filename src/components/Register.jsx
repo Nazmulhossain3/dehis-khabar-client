@@ -2,9 +2,10 @@ import React, { useContext, useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { AuthContext } from './Provider/AuthProvider';
 
+
 const Register = () => {
     const navigate = useNavigate()
-    const {user,createUser,userUpdate} = useContext(AuthContext)
+    const {createUser,userUpdate,logOut} = useContext(AuthContext)
     const [error,setError] = useState('')
     
     const handleSubmit = (event)=> {
@@ -30,10 +31,12 @@ const Register = () => {
         const loggedUser = result.user
         console.log(loggedUser)
         userUpdate(name,photo)
+          logOut()
 
+          
         console.log(loggedUser)
         
-        navigate('/login')
+        navigate('/')
         })
         .catch(error => {
             console.log(error)
@@ -44,7 +47,7 @@ const Register = () => {
     }
 
     return (
-        <div className="hero min-h-screen bg-base-200">
+  <div className="hero min-h-screen bg-base-200">
   <div className="hero-content flex-col ">
     <div className="text-center ">
       <h1 className="text-2xl font-bold">Please Register now!</h1>
@@ -97,6 +100,7 @@ const Register = () => {
       </form>
     </div>
   </div>
+
 </div>
     );
 };
